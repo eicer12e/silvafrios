@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silva Fríos</title>
     <style>
+        /* Estilo general */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #E3F2FD;
             color: #01579B;
+            line-height: 1.6;
         }
+        /* Encabezado */
         header {
             position: relative;
             background-color: #0288D1;
@@ -22,27 +25,31 @@
             background-repeat: no-repeat;
             background-position: center;
             width: 100%;
-            height: 368px;
+            height: 40vh; /* Altura relativa al viewport */
+            min-height: 250px; /* Altura mínima para pantallas pequeñas */
         }
         header h1 {
             position: absolute;
-            top: 20px;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
             margin: 0;
-            font-size: 3rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         header p {
             position: absolute;
-            bottom: 10px;
-            left: 20px; /* Ubicación a la izquierda */
+            bottom: 10%;
+            left: 5%;
             margin: 0;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: bold;
             background-color: rgba(0, 0, 0, 0.5);
+            color: white;
             padding: 10px 15px;
             border-radius: 5px;
         }
+        /* Navegación */
         nav {
             display: flex;
             justify-content: center;
@@ -54,14 +61,20 @@
             color: #01579B;
             margin: 0 15px;
             font-weight: bold;
+            font-size: 1rem;
         }
         nav a:hover {
             color: #0288D1;
         }
+        /* Secciones */
         section {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
         .catalogo {
             display: flex;
@@ -75,7 +88,8 @@
             padding: 10px;
             background-color: #E1F5FE;
             text-align: center;
-            width: 300px;
+            flex: 1 1 300px; /* Adaptable al espacio disponible */
+            max-width: 300px;
         }
         .producto img {
             max-width: 100%;
@@ -102,13 +116,8 @@
         .whatsapp-btn:hover {
             background-color: #1DA851;
         }
-
-        /* Ajustes para dispositivos móviles */
-        @media (max-width: 760px) {
-            header {
-                height: auto; /* La altura se ajustará automáticamente al contenido */
-                min-height: 200px; /* Altura mínima para mantener el diseño */
-            }
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
@@ -116,10 +125,17 @@
                 font-size: 1rem;
                 padding: 8px 10px;
             }
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+            section {
+                padding: 15px;
+            }
         }
-        @media (max-width: 220px) {
+        @media (max-width: 480px) {
             header {
-                min-height: 45px; /* Ajuste adicional para pantallas muy pequeñas */
+                height: 35vh; /* Altura más pequeña para pantallas pequeñas */
             }
             header h1 {
                 font-size: 1.5rem;
@@ -127,12 +143,19 @@
             header p {
                 font-size: 0.9rem;
             }
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            nav a {
+                margin: 5px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Silva Fríos</h1>
         <p>Especialistas en todo tipo de equipos de frío. Somos fabricantes</p>
     </header>
     <nav>
@@ -147,7 +170,6 @@
     <section id="catalogo">
         <h2>Catálogo</h2>
         <div class="catalogo">
-            <!-- Producto 1 -->
             <div class="producto">
                 <h3>Exhibidora de frío cuadrada</h3>
                 <a href="producto1.html">
@@ -155,8 +177,6 @@
                 </a>
                 <p><strong>Precio:</strong> $5,000</p>
             </div>
-
-            <!-- Producto 2 -->
             <div class="producto">  
                 <h3>Exhibidora de frío modelo 2</h3>
                 <a href="producto2.html">
