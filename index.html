@@ -18,15 +18,15 @@
             color: white;
             text-align: center;
             background-image: url('Portada.jpeg');
-            background-size: cover; /* Imagen cubre el área visible */
+            background-size: cover; /* La imagen cubrirá completamente el área */
             background-repeat: no-repeat;
             background-position: center;
-            width: 100%; /* Asegura que cubra el ancho completo */
-            height: 50vh; /* Altura relativa a la pantalla */
+            width: 100%;
+            height: 368px;
         }
         header h1 {
             position: absolute;
-            top: 10%;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
             margin: 0;
@@ -34,11 +34,11 @@
         }
         header p {
             position: absolute;
-            bottom: 10%;
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 18px;
             font-weight: bold;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px 15px;
@@ -106,6 +106,10 @@
 
         /* Ajustes para dispositivos móviles */
         @media (max-width: 768px) {
+            header {
+                height: auto; /* La altura se ajustará automáticamente al contenido */
+                min-height: 200px; /* Altura mínima para mantener el diseño */
+            }
             header h1 {
                 font-size: 2rem;
             }
@@ -114,10 +118,9 @@
                 padding: 8px 10px;
             }
         }
-
         @media (max-width: 480px) {
             header {
-                height: 40vh; /* Reduce aún más la altura en pantallas pequeñas */
+                min-height: 150px; /* Ajuste adicional para pantallas muy pequeñas */
             }
             header h1 {
                 font-size: 1.5rem;
@@ -130,7 +133,7 @@
 </head>
 <body>
     <header>
-        <h1>Silva Fríos</h1>
+        <h1></h1>
         <p>Especialistas en todo tipo de equipos de frío. Somos fabricantes</p>
     </header>
     <nav>
@@ -158,7 +161,7 @@
             <div class="producto">  
                 <h3>Exhibidora de frío modelo 2</h3>
                 <a href="producto2.html">
-                    <img src="maqina2a.jpeg" alt="Exhibidora de frío modelo 2">
+                    <img src="maqina2.jpeg" alt="Exhibidora de frío modelo 2">
                 </a>
                 <p><strong>Precio:</strong> $5,500</p>
             </div>
