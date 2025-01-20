@@ -16,30 +16,32 @@
             position: relative;
             background-color: #0288D1;
             color: white;
-            padding: 20px;
             text-align: center;
             background-image: url('Portada.jpeg');
-            background-size: cover;
+            background-size: cover; /* Imagen cubre el área visible */
             background-repeat: no-repeat;
             background-position: center;
-            height: 368px;
+            width: 100%; /* Asegura que cubra el ancho completo */
+            height: 50vh; /* Altura relativa a la pantalla */
         }
         header h1 {
             position: absolute;
-            top: 20px;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
             margin: 0;
+            font-size: 3rem;
         }
         header p {
             position: absolute;
-            bottom: 10px;
-            left: 20px;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
             margin: 0;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: bold;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px 10px;
+            padding: 10px 15px;
             border-radius: 5px;
         }
         nav {
@@ -103,15 +105,25 @@
         }
 
         /* Ajustes para dispositivos móviles */
-        @media (max-width: 350px) {
-            header {
-                height: 115px; /* Reduce la altura del encabezado */
-            }
+        @media (max-width: 768px) {
             header h1 {
-                font-size: 24px; /* Tamaño de texto ajustado */
+                font-size: 2rem;
             }
             header p {
-                font-size: 14px; /* Texto más pequeño para el párrafo */
+                font-size: 1rem;
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 40vh; /* Reduce aún más la altura en pantallas pequeñas */
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
             }
         }
     </style>
