@@ -19,7 +19,7 @@
             padding: 20px;
             text-align: center;
             background-image: url('Portada.jpeg');
-            background-size: 1263px 410px;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             height: 368px;
@@ -101,11 +101,24 @@
         .whatsapp-btn:hover {
             background-color: #1DA851;
         }
+
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            header {
+                height: 200px; /* Reduce la altura del encabezado */
+            }
+            header h1 {
+                font-size: 24px; /* Tamaño de texto ajustado */
+            }
+            header p {
+                font-size: 14px; /* Texto más pequeño para el párrafo */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Silva Fríos</h1>
         <p>Especialistas en todo tipo de equipos de frío. Somos fabricantes</p>
     </header>
     <nav>
@@ -151,4 +164,3 @@
     </footer>
 </body>
 </html>
-   
