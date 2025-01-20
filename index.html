@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silva Fríos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3F2FD;
+            color: #01579B;
+        }
+        header {
+            position: relative;
+            background-color: #0288D1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-image: url('Portada.jpeg');
+            background-size: 1263px 410px;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 368px;
+        }
+        header h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+        }
+        header p {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #81D4FA;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #01579B;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0288D1;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .catalogo .producto {
+            border: 1px solid #81D4FA;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #E1F5FE;
+            text-align: center;
+            width: 300px;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #0288D1;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1DA851;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <p>Especialistas en todo tipo de equipos de frío. Somos fabricantes</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#servicio-tecnico">Servicio Técnico</a>
+    </nav>
+    <section id="inicio">
+        <h2>Bienvenido a Silva Fríos</h2>
+        <p>Encuentra las mejores exhibidoras de frío para tu negocio. Calidad, eficiencia y soporte garantizado.</p>
+    </section>
+    <section id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <h3>Exhibidora de frío cuadrada</h3>
+                <a href="producto1.html">
+                    <img src="maqina 1.jpeg" alt="Exhibidora de frío cuadrada">
+                </a>
+                <p><strong>Precio:</strong> $5,000</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">  
+                <h3>Exhibidora de frío modelo 2</h3>
+                <a href="producto2.html">
+                    <img src="maqina2a.jpeg" alt="Exhibidora de frío modelo 2">
+                </a>
+                <p><strong>Precio:</strong> $5,500</p>
+            </div>
+        </div>
+    </section>
+    <section id="servicio-tecnico">
+        <h2>Servicio Técnico</h2>
+        <p>Contamos con un equipo especializado para brindarte el mejor servicio técnico en exhibidoras de frío. Si tienes algún inconveniente, no dudes en contactarnos.</p>
+        <p><strong>Teléfono:</strong> 987-654-321</p>
+        <p><strong>Correo:</strong> soporte@silvafrios.com</p>
+        <a class="whatsapp-btn" href="https://wa.me/51969523332?text=Hola,%20necesito%20información%20sobre%20el%20servicio%20técnico%20de%20exhibidoras%20de%20frío." target="_blank">Contáctanos por WhatsApp</a>
+    </section>
+    <footer>
+        <p>©️ 2025 Silva Fríos - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+   
